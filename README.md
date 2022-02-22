@@ -18,8 +18,6 @@
 
 </p>
 
-Status
-
 <h4 align="center">
 <img src="https://c.tenor.com/Ie0mnoxeVHgAAAAi/pikachu-pokemon.gif" width="80px">
 	Pokedex 🚀 
