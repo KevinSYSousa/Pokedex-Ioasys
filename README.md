@@ -8,13 +8,13 @@
 <h1 align="center">Pokedex</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/KevinSYSousa/pokedex?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/KevinSYSousa/Pokedex-Ioasys?style=flat-square">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/KevinSYSousa/pokedex?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/KevinSYSousa/Pokedex-Ioasys?style=flat-square">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/KevinSYSousa/pokedex?color=56BEB8">
+  <img alt="Version" src="https://img.shields.io/github/package-json/v/KevinSYSousa/Pokedex-Ioasys?style=flat-square">
 
-  <img alt="License" src="https://img.shields.io/github/license/KevinSYSousa/pokedex?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/KevinSYSousa/Pokedex-Ioasys?style=flat-square">
 
 </p>
 
