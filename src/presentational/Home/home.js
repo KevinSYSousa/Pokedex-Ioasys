@@ -22,6 +22,7 @@ import Header from '../../components/Header/Header';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import PokemonCard from '../../components/PokemonCard/PokemonCard';
 import Loading from '../../components/Loading/Loading';
+import HintSearch from '../../components/HintSearch/HintSearch';
 
 const Home = () => {
   const { nightMode, loading, search } = useSelector(
@@ -30,12 +31,19 @@ const Home = () => {
   const [pokemon, setPokemon] = useState([]);
   const [page, setPage] = useState(0);
   const [text, setText] = useState('');
+  const [warn, setWarn] = useState(false);
   const dispatch = useDispatch();
   const add = 60;
 
   useEffect(() => {
     loadData(page);
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setWarn(false);
+    }, 3000);
+  }, [warn]);
 
   const loadData = async (page) => {
     if (loading) return;
@@ -47,6 +55,12 @@ const Home = () => {
   };
 
   const searchData = async () => {
+    setText();
+    const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+    if (text === '' || specialChars.test(text) || !text) {
+      setWarn(true);
+      return;
+    }
     dispatch(searchAction(true));
     dispatch(startLoading(true));
     setPokemon([]);
@@ -61,8 +75,7 @@ const Home = () => {
   };
 
   const clearValues = () => {
-    setPokemon([]);
-    setText('');
+    pokemon.shift();
     dispatch(searchAction(false));
     loadData(0);
   };
@@ -72,15 +85,16 @@ const Home = () => {
       <Loading loading={loading} />
       <StyledContainer>
         <Header title={'ioasys pokédex'} nightMode={nightMode} />
+        <HintSearch active={warn} nightMode={nightMode} />
         <SearchBar
           value={text}
-          onChangeText={(text) => setText(text)}
+          onChangeText={(text) => setText(text.replace(/\s+/i, ''))}
           onSubmitEditing={searchData}
           nightMode={nightMode}
           rightComponent={
             <StyledButton
               onPress={() => {
-                search ? (clearValues() ? text.length >= 2 : searchData()) : {};
+                search ? clearValues() : searchData();
               }}
             >
               {search ? (
