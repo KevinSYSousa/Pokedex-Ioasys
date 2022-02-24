@@ -3,7 +3,7 @@ import theme from '../../styles/theme';
 
 export const StyledView = styled.View`
 	flex: 1;
-	background-color: ${props =>
+	background-color: ${(props) =>
 		props.nightMode ? theme.colors.dark_gray : theme.colors.white};
 `;
 
@@ -71,11 +71,11 @@ export const StyledScrollView = styled.FlatList.attrs({
 	height: 65%;
 `;
 
-export const StyledExample = styled.View`
-	width: 105px;
+export const StyledEmpty = styled.View`
 	height: 115px;
+	width: 28%;
 	opacity: 0.2;
 	background-color: ${theme.colors.light_gray};
-	border-radius: 10px;
+	border-radius: 8px;
 	margin-bottom: 20px;
 `;

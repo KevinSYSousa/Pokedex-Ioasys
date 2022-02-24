@@ -22,10 +22,10 @@ export const StyledFavoritesButton = styled.TouchableOpacity`
 
 export const StyledInputContainer = styled.View`
 	height: 55px;
-	width: 305px;
+	width: 84.5%;
 `;
 
-export const StyledInputLabel = styled(FloatingLabelInput).attrs(props => ({
+export const StyledInputLabel = styled(FloatingLabelInput).attrs((props) => ({
 	containerStyles: {
 		borderColor: theme.colors.secondary_color,
 		borderWidth: 2,

@@ -22,7 +22,7 @@ export const StyledDefaultImage = styled.Image`
 `;
 
 export const StyledCardContainer = styled.View`
-	background-color: ${props =>
+	background-color: ${(props) =>
 		props.nightMode ? theme.colors.dark_gray : theme.colors.white};
 	width: 95%;
 	height: 70%;
@@ -33,7 +33,7 @@ export const StyledCardContainer = styled.View`
 export const StyledLikeContainer = styled.View`
 	width: 100%;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: space-between;
 `;
 
 export const StyledLikeButton = styled.TouchableOpacity`
@@ -75,12 +75,12 @@ export const StyledMeasurementsContainer = styled.View`
 
 export const StyledMeasurementsIcon = styled.Image`
 	margin-right: 5px;
-	tint-color: ${props =>
+	tint-color: ${(props) =>
 		props.nightMode ? theme.colors.white : theme.colors.dark_gray};
 `;
 
 export const StyledMeasurements = styled.Text`
-	color: ${props =>
+	color: ${(props) =>
 		props.nightMode ? theme.colors.white : theme.colors.dark_gray};
 	font-size: 14px;
 	line-height: 16px;
@@ -104,7 +104,7 @@ export const StyledSkillsContainer = styled.View`
 `;
 
 export const StyledDetails = styled.Text`
-	color: ${props =>
+	color: ${(props) =>
 		props.nightMode ? theme.colors.white : theme.colors.dark_gray};
 	text-align: justify;
 	font-size: 14px;
@@ -120,7 +120,7 @@ export const StyledStatsContainer = styled.View`
 `;
 
 export const StyledStatsTitle = styled.Text`
-	color: ${props => props.color};
+	color: ${(props) => props.color};
 	padding-top: 5px;
 	padding-bottom: 15px;
 	font-size: 18px;

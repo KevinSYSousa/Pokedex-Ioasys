@@ -45,12 +45,12 @@ Pokedex is a large list of pokemons, here you can find informations, details and
 
 ## :sparkles: Features
 
-:heavy_check_mark: Pokemon's list;\
-:heavy_check_mark: Search bar;\
-:heavy_check_mark: Pokemon's details;\
-:heavy_check_mark: Night Mode;\
-:heavy_check_mark: Favorites list;\
-:heavy_check_mark: Share on social media;
+:heavy_check_mark: Pokemon's list\
+:heavy_check_mark: Search bar\
+:heavy_check_mark: Pokemon's details\
+:heavy_check_mark: Night Mode\
+:heavy_check_mark: Favorites list\
+:heavy_check_mark: Share on social media
 
 ## :rocket: Technologies
 
@@ -59,7 +59,7 @@ The following tools were used in this project:
 - [Axios](https://axios-http.com/)
 - [Redux.js](https://redux-toolkit.js.org/)
 - [React Native](https://reactnative.dev/)
-- [styled-components](https://styled-components.com/)
+- [Styled-components](https://styled-components.com/)
 
 ## :white_check_mark: Requirements
 

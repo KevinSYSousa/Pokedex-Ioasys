@@ -4,10 +4,10 @@ import {SvgUri} from 'react-native-svg';
 
 export const StyledCard = styled.TouchableOpacity`
 	height: 115px;
-	width: 105px;
+	width: 28%;
 	border-radius: 8px;
 	border-width: 1px;
-	border-color: ${props => props.color};
+	border-color: ${(props) => props.color};
 	justify-content: space-between;
 	align-items: center;
 	overflow: hidden;
@@ -15,7 +15,7 @@ export const StyledCard = styled.TouchableOpacity`
 `;
 
 export const StyledId = styled.Text`
-	color: ${props => props.color};
+	color: ${(props) => props.color};
 	font-size: 8px;
 	font-family: ${theme.fonts.regular};
 	margin-left: 70px;
@@ -27,7 +27,7 @@ export const StyledImage = styled(SvgUri).attrs({
 })(() => '');
 
 export const StyledNameContainer = styled.View`
-	background-color: ${props => props.color};
+	background-color: ${(props) => props.color};
 	justify-content: center;
 	height: 24px;
 	width: 100%;
