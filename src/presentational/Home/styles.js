@@ -3,7 +3,7 @@ import theme from '../../styles/theme';
 
 export const StyledView = styled.View`
 	flex: 1;
-	background-color: ${props =>
+	background-color: ${(props) =>
 		props.nightMode ? theme.colors.dark_gray : theme.colors.white};
 `;
 
@@ -19,7 +19,7 @@ export const StyledFlatList = styled.FlatList.attrs({
 	},
 	numColumns: 3,
 	initialNumToRender: 20,
-	onEndReachedThreshold: 0.8,
+	onEndReachedThreshold: 0.5,
 })`
 	flex: 1;
 	margin-top: 10px;

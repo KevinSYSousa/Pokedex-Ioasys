@@ -2,7 +2,7 @@ import api from './api';
 
 const getPokemonData = async (page) => {
   try {
-    const { data } = await api.get(`pokemon?limit=60&offset=${page}`);
+    const { data } = await api.get(`pokemon?limit=30&offset=${page}`);
     for (let index = 0; index < data.results.length; index++) {
       const pokemonDetails = await api.get(
         `pokemon/${data.results[index].url.split('/')[6]}`

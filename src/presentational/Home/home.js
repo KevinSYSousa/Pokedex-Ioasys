@@ -33,7 +33,7 @@ const Home = () => {
   const [text, setText] = useState('');
   const [warn, setWarn] = useState(false);
   const dispatch = useDispatch();
-  const add = 60;
+  const add = 30;
 
   useEffect(() => {
     loadData(page);
@@ -66,7 +66,7 @@ const Home = () => {
     setPokemon([]);
     setPage(0);
     const search = await getSearchPokemon(text.toLowerCase());
-    if (search === 'Not Found') {
+    if (search === 'error') {
       setPokemon([]);
     } else {
       setPokemon([search]);
