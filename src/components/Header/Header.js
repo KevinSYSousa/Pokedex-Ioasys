@@ -12,8 +12,8 @@ import {
 	StyledSwitch,
 } from './styles';
 
-const Header = ({title}) => {
-	const {nightMode} = useSelector(handleUserChoices => handleUserChoices);
+const Header = () => {
+	const {nightMode} = useSelector((handleUserChoices) => handleUserChoices);
 	const dispatch = useDispatch();
 
 	const toggleNightMode = () => {
@@ -28,7 +28,7 @@ const Header = ({title}) => {
 					<StyledImageContainer
 						source={require('../../assets/icons/header-logo.png')}
 					/>
-					<StyledTitle>{title}</StyledTitle>
+					<StyledTitle>ioasys pokédex</StyledTitle>
 				</StyleTitleContainer>
 				<StyledSwitchContainer>
 					<StyledSwitch

@@ -13,7 +13,7 @@ export const StyledWarnContainer = styled.View`
 `;
 
 export const StyledWarnContent = styled.Text`
-	color: ${props =>
+	color: ${(props) =>
 		props.nightMode ? theme.colors.dark_gray : theme.colors.white};
 	text-align: center;
 	font-size: 20px;

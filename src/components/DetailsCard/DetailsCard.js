@@ -185,7 +185,7 @@ const DetailsCard = ({action, pokemon, details}) => {
 						</StyledSkillsContainer>
 					</StyledCharacteristics>
 					<StyledCharacteristics>
-						<StyledDetails numberOfLines={2} nightMode={nightMode}>
+						<StyledDetails numberOfLines={3} nightMode={nightMode}>
 							{details.replaceAll('\n', ' ')}
 						</StyledDetails>
 					</StyledCharacteristics>

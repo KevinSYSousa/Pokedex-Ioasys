@@ -3,7 +3,7 @@ import theme from '../../styles/theme';
 
 export const StyledContainer = styled.View`
 	border-radius: 10px;
-	background-color: ${props => props.color};
+	background-color: ${(props) => props.color};
 	height: 20px;
 	padding-bottom: 2px;
 	margin-left: 10px;

@@ -10,7 +10,7 @@ export const StyledStatsContainer = styled.View`
 `;
 
 export const StyledTitle = styled.Text`
-	color: ${props => props.color};
+	color: ${(props) => props.color};
 	font-size: 14px;
 	line-height: 16px;
 	font-family: ${theme.fonts.regular};
@@ -18,7 +18,7 @@ export const StyledTitle = styled.Text`
 `;
 
 export const StyledValue = styled.Text`
-	color: ${props =>
+	color: ${(props) =>
 		props.nightMode ? theme.colors.white : theme.colors.dark_gray};
 	font-size: 12px;
 	line-height: 16px;
@@ -36,15 +36,15 @@ export const StyledStatusBarContainer = styled.View`
 `;
 
 export const StyledStatusValue = styled.View`
-	background-color: ${props => props.color};
-	width: ${props => props.stats};
+	background-color: ${(props) => props.color};
+	width: ${(props) => props.stats};
 	height: 8px;
 	z-index: 3;
 	position: absolute;
 `;
 
 export const StyledStatusBar = styled.View`
-	background-color: ${props => props.color};
+	background-color: ${(props) => props.color};
 	opacity: 0.2;
 	width: 100%;
 	height: 8px;

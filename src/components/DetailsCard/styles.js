@@ -33,7 +33,7 @@ export const StyledCardContainer = styled.View`
 export const StyledLikeContainer = styled.View`
 	width: 100%;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-end;
 `;
 
 export const StyledLikeButton = styled.TouchableOpacity`

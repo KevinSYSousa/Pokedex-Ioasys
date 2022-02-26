@@ -4,11 +4,11 @@ import theme from '../../styles/theme';
 
 export const StyledView = styled.View`
 	flex: 1;
-	background-color: ${props => props.color};
+	background-color: ${(props) => props.color};
 `;
 
 export const StyleShotView = styled(ViewShot)`
-	background-color: ${props => props.color};
+	background-color: ${(props) => props.color};
 	flex: 1;
 `;
 

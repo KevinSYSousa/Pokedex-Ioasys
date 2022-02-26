@@ -49,7 +49,7 @@ const Favorite = () => {
 		<StyledView nightMode={nightMode}>
 			<Loading loading={loading} />
 			<StyledContainer>
-				<Header title={'ioasys pokédex'} nightMode={nightMode} />
+				<Header />
 				<StyledTitleContainer>
 					<StyledIcon source={require('../../assets/icons/favorite.png')} />
 					<StyledTitle>Meus favoritos</StyledTitle>

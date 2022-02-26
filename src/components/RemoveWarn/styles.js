@@ -13,7 +13,7 @@ export const StyledView = styled.View`
 	border-radius: 10px;
 	border-width: 2px;
 	border-color: ${theme.colors.secondary_color};
-	background-color: ${props =>
+	background-color: ${(props) =>
 		props.nightMode ? theme.colors.dark_gray : theme.colors.white};
 `;
 

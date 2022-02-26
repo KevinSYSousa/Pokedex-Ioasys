@@ -3,13 +3,13 @@ import theme from '../../styles/theme';
 
 export const StyledSafeAreaView = styled.SafeAreaView`
 	height: 20px;
-	background-color: ${props =>
+	background-color: ${(props) =>
 		props.nightMode ? theme.colors.dark_gray : theme.colors.white};
 `;
 
 export const StyledContainer = styled.View`
 	height: 60px;
-	background-color: ${props =>
+	background-color: ${(props) =>
 		props.nightMode ? theme.colors.dark_gray : theme.colors.white};
 	justify-content: space-between;
 	align-items: center;
@@ -29,7 +29,7 @@ export const StyledSwitchContainer = styled.View`
 	border-width: 1px;
 `;
 
-export const StyledSwitch = styled.Switch.attrs(props => ({
+export const StyledSwitch = styled.Switch.attrs((props) => ({
 	trackColor: {
 		false: theme.colors.white,
 		true: theme.colors.dark_gray,

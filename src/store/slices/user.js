@@ -8,7 +8,7 @@ const user = createSlice({
 		search: false,
 	},
 	reducers: {
-		changeTheme: state => {
+		changeTheme: (state) => {
 			state.nightMode = !state.nightMode;
 		},
 		startLoading: (state, {payload}) => {

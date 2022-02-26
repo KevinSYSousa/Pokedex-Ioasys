@@ -11,7 +11,7 @@ import {
 
 const Stats = ({nightMode, stat, color}) => {
 	const totalStats = 250;
-	const statName = name => {
+	const statName = (name) => {
 		switch (name) {
 			case 'hp':
 				return 'HP';

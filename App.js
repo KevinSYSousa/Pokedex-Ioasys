@@ -15,7 +15,7 @@ const App = () => {
 			<ThemeProvider theme={theme}>
 				<StatusBar
 					barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-					backgroundColor={theme.colorssecondary_color}
+					backgroundColor={theme.colors.secondary_color}
 				/>
 				<Routes />
 			</ThemeProvider>
